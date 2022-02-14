@@ -3,7 +3,7 @@ import { NO_ACCOUNT_REQUIRED_PERMS_INT } from "./permissions";
 
 function hasPerms(
   userPermsInt: number | number[],
-  requiredPermsInt: number
+  requiredPermsInt: number | number[]
 ): boolean {
   const userPerms = decodePerms(
     combinePerms(userPermsInt, NO_ACCOUNT_REQUIRED_PERMS_INT)
@@ -23,8 +23,8 @@ function combinePerms(
   return encodePerms(newPerms);
 }
 function removePerms(
-  userPermsInt: number,
-  permsIntToBeRemoved: number
+  userPermsInt: number | number[],
+  permsIntToBeRemoved: number | number[]
 ): number {
   const userPerms = decodePerms(userPermsInt);
   const permsToBeRemoved = decodePerms(permsIntToBeRemoved);

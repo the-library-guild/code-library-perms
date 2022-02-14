@@ -102,4 +102,8 @@ describe("hasPerms", () => {
 
     expect(hasPerms(input, Perm.VIEW_BOOKS)).toEqual(false);
   });
+  test("it cannot break", () => {
+    const input = 5;
+    expect(hasPerms(input, 1)).toEqual(true);
+  });
 });
