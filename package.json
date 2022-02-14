@@ -1,0 +1,30 @@
+{
+  "name": "code-library-perms",
+  "version": "1.0.0",
+  "description": "The Permissions-Integer-Based Authorization System of the CODE University of Applied Sciences Library Management System",
+  "main": "dist/index",
+  "typings": "dist/index",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest",
+    "build": "tsc && npm run test",
+    "prepare": "npm run build",
+    "start": "node dist",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LinusBolls/code-library-perms.git/"
+  },
+  "author": "https://github.com/LinusBolls/",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LinusBolls/code-library-perms/issues"
+  },
+  "homepage": "https://github.com/LinusBolls/code-library-perms#readme",
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "typescript": "^4.5.5"
+  }
+}
