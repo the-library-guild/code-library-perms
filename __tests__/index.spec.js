@@ -100,7 +100,7 @@ describe("hasPerms", () => {
   test("it can fail", () => {
     const input = Perm.MANAGE_BOOKS;
 
-    expect(hasPerms(input, Perm.VIEW_BOOKS)).toEqual(false);
+    expect(hasPerms(input, Perm.MANAGE_USERS)).toEqual(false);
   });
   test("it cannot break", () => {
     const input = 5;

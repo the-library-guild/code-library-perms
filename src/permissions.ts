@@ -12,13 +12,14 @@ const Perm = {
 
   CHANGE_PERMISSIONS: 64,
 };
-const NO_ACCOUNT_REQUIRED_PERMS_INT = encodePerms([]);
-const DEFAULT_USER_PERMS_INT = encodePerms([Perm.VIEW_BOOKS, Perm.RENT_BOOKS]);
+const NO_ACCOUNT_REQUIRED_PERMS_INT = encodePerms([Perm.VIEW_BOOKS]);
+const DEFAULT_USER_PERMS_INT = encodePerms([Perm.RENT_BOOKS]);
 const LIBRARIAN_PERMS_INT = encodePerms([
   Perm.VIEW_USERS,
   Perm.MANAGE_BOOKS,
   Perm.MANAGE_USERS,
 ]);
+
 export {
   Perm,
   NO_ACCOUNT_REQUIRED_PERMS_INT,
