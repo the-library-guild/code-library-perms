@@ -1,6 +1,6 @@
 {
   "name": "code-library-perms",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "The Permissions-Integer-Based Authorization System of the CODE University of Applied Sciences Library Management System",
   "main": "dist/index",
   "typings": "dist/index",
