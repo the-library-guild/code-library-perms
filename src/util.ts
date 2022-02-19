@@ -8,6 +8,9 @@ function hasPerms(
   const userPerms = decodePerms(
     combinePerms(userPermsInt, NO_ACCOUNT_REQUIRED_PERMS_INT)
   );
+  console.log("sache:", NO_ACCOUNT_REQUIRED_PERMS_INT);
+  console.log({ userPermsInt, userPerms });
+
   const requiredPerms = decodePerms(requiredPermsInt);
 
   return requiredPerms.every((i) => userPerms.includes(i));
